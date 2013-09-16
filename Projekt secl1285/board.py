@@ -35,7 +35,7 @@ import random
 
 class Board():
     def __init__(self, screen):
-        self.startButton = Button("startButton.png", "startButtonHover.png", screen)
+        self.startButton = Button("images/startButton.png", "images/startButtonHover.png", screen)
         self.screen = screen
         self.index = None
         #Create a colorlist so that the squares get different colors
@@ -46,7 +46,7 @@ class Board():
         self.posX = None
         self.posY = None
         #Create a sound list so that the squares gt different sounds
-        self.soundList = ["button-1.wav", "button-2.wav","button-3.wav","button-4.wav","button-5.wav", "button-6.wav","button-7.wav","button-8.wav","button-9.wav", "button-10.wav","button-11.wav","button-12.wav","button-13.wav", "button-15.wav","button-15.wav","button-16.wav"]
+        self.soundList = ["sound/button-1.wav", "sound/button-2.wav","sound/button-3.wav","sound/button-4.wav","sound/button-5.wav", "sound/button-6.wav","sound/button-7.wav","sound/button-8.wav","sound/button-9.wav", "sound/button-10.wav","sound/button-11.wav","sound/button-12.wav","sound/button-13.wav", "sound/button-15.wav","sound/button-15.wav","sound/button-16.wav"]
     
     #Give the grid positions an ID            
     def createGrid(self, level):

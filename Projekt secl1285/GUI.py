@@ -20,16 +20,16 @@ class GUI():
     def __init__(self, screen, backgroundColor):
         self.screen  = screen
         self.backgroundColor =backgroundColor
-        self.menu = py.image.load("menu.png")
+        self.menu = py.image.load("images/menu.png")
 
-        self.easyButton = Button("easyButton.png","easyButtonHover.png", self.screen)
-        self.mediumButton = Button("mediumButton.png","mediumButtonHover.png", self.screen)
-        self.hardButton = Button("hardButton.png", "hardButtonHover.png",  self.screen)
-        self.homeButton = Button("homeButton.png", "homeButtonHover.png", self.screen)
-        self.infoButton = Button("info.png", "infoHover.png", self.screen)
+        self.easyButton = Button("images/easyButton.png","images/easyButtonHover.png", self.screen)
+        self.mediumButton = Button("images/mediumButton.png","images/mediumButtonHover.png", self.screen)
+        self.hardButton = Button("images/hardButton.png", "images/hardButtonHover.png",  self.screen)
+        self.homeButton = Button("images/homeButton.png", "images/homeButtonHover.png", self.screen)
+        self.infoButton = Button("images/info.png", "images/infoHover.png", self.screen)
 
     def initScreenBuild(self):
-        logo = py.image.load("trainLogo.png")
+        logo = py.image.load("images/trainLogo.png")
         
         self.screen.fill(self.backgroundColor)
         self.screen.blit(logo,(200,120))
@@ -50,11 +50,11 @@ class GUI():
 
     def gameOverBuild(self, count):
         #Play fail sound on build
-        py.mixer.music.load('fail_trombone_01.ogg')
+        py.mixer.music.load('sound/fail_trombone_01.ogg')
         py.mixer.music.play(0)
         
-        gameOverIm = py.image.load("gameover.png")
-        playAgain = py.image.load("playagain.png")
+        gameOverIm = py.image.load("images/gameover.png")
+        playAgain = py.image.load("images/playagain.png")
         
         #Setup and render score
         scoreFont = py.font.Font("League Gothic.otf", 50)

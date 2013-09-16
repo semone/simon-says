@@ -43,8 +43,8 @@ board = Board(screen)
 gui = GUI(screen,backgroundColor)
 
 #Load images
-wait = py.image.load("wait.png")
-go = py.image.load("go.png")
+wait = py.image.load("images/wait.png")
+go = py.image.load("images/go.png")
 
 #Build the initial screen
 gui.initScreenBuild()
